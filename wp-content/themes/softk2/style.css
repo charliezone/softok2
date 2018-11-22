@@ -21,6 +21,7 @@
  3.6 Newsletter
  3.7 Contact
  3.8 Footer
+ 3.9 Blog
 4 Responsive 
 **********************************************************************/
 
@@ -832,6 +833,29 @@ text-align:justify
     position:relative;
     top:7px;
     color:#fff;
+}
+/*
+3.9 type-consejos
+********************************************************************/
+.consejos{
+    padding: 2em 15em;
+}
+
+.consejos h1{
+    color: #181A1C;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.consejos img.attachment-post-thumbnail{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.consejos .post-content p{
+    color: #181A1C;
 }
 /*
 4 Responsible

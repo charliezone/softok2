@@ -1,51 +1,53 @@
 	<!-- Contact section start -->
+    <?php if (is_page('home')): ?>
+        <div id="contact" class="contact">
 
-    <div id="contact" class="contact">
-
-        <div class="section secondary-section">
-
-            <div class="container">
-
-                <div class="title">
-
-                    <h1><?php the_field('contacto_titulo') ?></h1>                        
-
-                </div>
-
-            </div>
-
-            <div class="map-wrapper">
-
-                <div class="map-canvas" id="map-canvas">Cargando el mapa...</div>
+            <div class="section secondary-section">
 
                 <div class="container">
 
-                    <div class="row-fluid">
+                    <div class="title">
 
-                        <div class="span5 contact-form centered">
+                        <h1><?php the_field('contacto_titulo') ?></h1>                        
 
-                           	<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-							<script>
-							  hbspt.forms.create({
-								portalId: "2870737",
-								formId: "14c3050f-0d9f-49fc-8d3b-15c01e7976e4"
-							});
-							</script>
+                    </div>
+
+                </div>
+
+                <div class="map-wrapper">
+
+                    <div class="map-canvas" id="map-canvas">Cargando el mapa...</div>
+
+                    <div class="container">
+
+                        <div class="row-fluid">
+
+                            <div class="span5 contact-form centered">
+
+                                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+                                <script>
+                                  hbspt.forms.create({
+                                    portalId: "2870737",
+                                    formId: "14c3050f-0d9f-49fc-8d3b-15c01e7976e4"
+                                });
+                                </script>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="span9 center contact-info">
-                    <p><?php the_field('contacto_direccion') ?></p>
-                    <p class="info-mail"><?php the_field('contacto_correo') ?></p>
-                    <p><?php the_field('contacto_telefono') ?></p>  
+                <div class="container">
+                    <div class="span9 center contact-info">
+                        <p><?php the_field('contacto_direccion') ?></p>
+                        <p class="info-mail"><?php the_field('contacto_correo') ?></p>
+                        <p><?php the_field('contacto_telefono') ?></p>  
+                    </div>
+                    <div class="row-fluid centered"> </div>
                 </div>
-                <div class="row-fluid centered"> </div>
             </div>
         </div>
-    </div>
     <!-- Contact section edn -->
+    <?php endif ?>
+    
                                                                                                                                                                                                                                                                                                                                                                                                              
     <!-- Footer section start -->
     <div class="footer">
