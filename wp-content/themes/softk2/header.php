@@ -37,7 +37,7 @@
 
                     <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 
-                        <i class="icon-menu"></i>
+                        <i class="fas fa-bars"></i>
 
                     </button>
 
