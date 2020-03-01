@@ -8,7 +8,7 @@ function softok2_setup(){
 function softok2_styles_scripts() {
     wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/vendors/fontawesome/css/all.min.css');
 
-    wp_enqueue_style( 'roboto-font', 'http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext');
+    wp_enqueue_style( 'roboto-font', 'https://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext');
 
     wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.css');
 
@@ -21,6 +21,8 @@ function softok2_styles_scripts() {
     wp_enqueue_style( 'animate', get_template_directory_uri() . '/css/animate.css');
 
     wp_enqueue_style( 'softok2-style', get_stylesheet_uri(), array('bootstrap', 'bootstrap-responsive', 'jquery-cslider', 'jquery-bxslider', 'animate', 'font-awesome') );
+
+    wp_enqueue_style( 'softok2-custom-style', get_template_directory_uri() . '/css/custom.css', array('softok2-style', 'bootstrap', 'bootstrap-responsive', 'jquery-cslider', 'jquery-bxslider', 'animate', 'font-awesome') );
 
     wp_register_script( 'softok2_jquery_version', get_template_directory_uri() . '/js/jquery.js', null, '', true );
     wp_add_inline_script( 'softok2_jquery_version', 'var softok2_jquery_version = $.noConflict(true);' );
