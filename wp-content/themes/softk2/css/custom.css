@@ -86,8 +86,17 @@ nav.navigation.pagination .nav-links .dots{
 
 /* == WordPress WYSIWYG Editor Styles == */
 
+.post-single p{
+    color: #181A1C;
+}
+
 .post-single img {
 	margin: 0 0 1.5em 0;
+}
+
+.post-single a{
+    color: white;
+    font-weight: bolder;
 }
 
 .post-single a:hover{
