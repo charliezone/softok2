@@ -25,7 +25,7 @@
 
                 <div class="container">
 
-                    <a href="#" class="brand">
+                    <a href="<?php echo site_url() ?>" class="brand">
 
                         <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" width="192" height="40" alt="Logo" />
 
@@ -47,17 +47,19 @@
 
                         <ul class="nav" id="top-navigation">
 
-                            <li class="active"><a href="<?php echo (is_page('home'))?'#home':site_url().'/#home' ?>">Home</a></li>
+                            <li class="active"><a class="spa" href="<?php echo (is_page('home'))?'#home':site_url().'/#home' ?>">Home</a></li>
 
-                            <li><a href="<?php echo (is_page('home'))?'#service':site_url().'/#service' ?>">Metodologia</a></li>
+                            <li><a class="spa" href="<?php echo (is_page('home'))?'#service':site_url().'/#service' ?>">Metodologia</a></li>
 
-                            <li><a href="<?php echo (is_page('home'))?'#portfolio':site_url().'/#portfolio' ?>">Portafolio</a></li>
+                            <li><a class="spa" href="<?php echo (is_page('home'))?'#portfolio':site_url().'/#portfolio' ?>">Portafolio</a></li>
 
-                            <li><a href="<?php echo (is_page('home'))?'#about':site_url().'/#about' ?>">Nosotros</a></li>
+                            <li><a class="spa" href="<?php echo (is_page('home'))?'#about':site_url().'/#about' ?>">Nosotros</a></li>
 
-                            <li><a href="<?php echo (is_page('home'))?'#clients':site_url().'/#clients' ?>">Clientes</a></li>
+                            <li><a class="spa" href="<?php echo (is_page('home'))?'#clients':site_url().'/#clients' ?>">Clientes</a></li>
 
-                            <li><a href="<?php echo (is_page('home'))?'#contact':site_url().'/#contact' ?>">Contacto</a></li>
+                            <li><a href="<?php echo site_url('blog') ?>">Blog</a></li>
+
+                            <li><a class="spa" href="<?php echo (is_page('home'))?'#contact':site_url().'/#contact' ?>">Contacto</a></li>
 
                         </ul>
 
