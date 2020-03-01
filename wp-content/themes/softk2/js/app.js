@@ -12,7 +12,7 @@ jQuery(document).ready(function ($) {
         topMenu = $("#top-navigation"),
         topMenuHeight = topMenu.outerHeight(),
         // All list items
-        menuItems = topMenu.find("a"),
+        menuItems = topMenu.find("a.spa"),
         // Anchors corresponding to menu items
         scrollItems = menuItems.map(function () {
             var item = $($(this).attr("href"));
